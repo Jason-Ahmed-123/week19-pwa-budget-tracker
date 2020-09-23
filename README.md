@@ -7,9 +7,9 @@ A budget tracker application that allows for offline access and functionality. T
 * JavaScript
 * HTML
 * CSS
+* Express.js
+* IndexedDB
 * Google Lighthouse
-* WebPack
-* WebPack-Bundle-Analyzer
 * The File-Loader plugin
 
 ## Website

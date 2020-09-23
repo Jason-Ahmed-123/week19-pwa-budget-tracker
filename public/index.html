@@ -45,6 +45,18 @@
   <script src="js/index.js"></script>
 
   <!-- link to IndexedDB file -->
-  <script src="./idb.js"></script>
+  <script src="js/idb.js"></script>
 </body>
+
+<!-- per module 19 instructions, added Service Worker -->
+<script>
+  (function() {
+    if("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => console.log("Service Worker registered successfully."))
+        .catch(error => console.log("Service Worker registration failed:", error));
+    }
+  })();
+  </script>
+
 </html>
