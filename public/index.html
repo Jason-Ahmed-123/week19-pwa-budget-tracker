@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
 
   <title>Budget Tracker</title>
 </head>
+
 <body>
   <div class="wrapper">
     <div class="total">
@@ -36,11 +38,11 @@
           <th>Amount</th>
         </thead>
         <tbody id="tbody">
-          
+
         </tbody>
       </table>
     </div>
-    
+
     <canvas id="myChart"></canvas>
   </div>
 
@@ -50,17 +52,19 @@
   <!-- link to IndexedDB file -->
   <script src="js/idb.js"></script>
 
-  <!-- per module 19 instructions, added Service Worker -->
+
+
+</body>
+
+<!-- per module 19 instructions, added Service Worker, AFTER the </body> tag -->
 <script>
-  (function() {
-    if("serviceWorker" in navigator) {
+  (function () {
+    if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("./service-worker.js")
         .then(() => console.log("Service Worker registered successfully."))
         .catch(error => console.log("Service Worker registration failed:", error));
     }
   })();
-  </script>
-  
-</body>
+</script>
 
 </html>
