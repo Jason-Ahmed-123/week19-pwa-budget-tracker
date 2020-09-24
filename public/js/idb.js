@@ -1,4 +1,4 @@
-// I followed module 18, lesson 4 to set-up IndexedDB //
+// Followed module 18, lesson 4 to set-up IndexedDB //
 
 // create variable to hold db connection
 let db;
