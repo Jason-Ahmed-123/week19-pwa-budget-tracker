@@ -16,9 +16,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(MONGODB_URI, {
+// per Module 18 "Deploy to Heroku" step-by-step instructions:
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 // routes
