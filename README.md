@@ -19,4 +19,4 @@ https://guarded-mesa-31136.herokuapp.com/
 ![budget-tracker-screenshot](https://user-images.githubusercontent.com/61637816/94349103-3d144e00-fff6-11ea-833d-279807c34b6f.png)
 
 ## Contribution
-Made with by Jason Ahmed
+Made by Jason Ahmed
